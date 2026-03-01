@@ -47,46 +47,53 @@ ul .li1 a:hover {
     color: white;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  width:40%
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-    border-radius: 5px 5px 5px 5px;
-}
-
 .container {
   padding: 2px 16px;
+  text-align: left;
   align-items: start;
   column-gap: 16px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45%, max-content));
   grid-template-rows: repeat(5, auto);
+  padding: 24px 24px 0;
 }
 
 .picture {
+
     height: 100%;
     width: 100%;
-    border-radius: inherit;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .noticia-title {
+    color: black;
     grid-column: 2;
         grid-column-start: 2;
         grid-column-end: auto;
     margin: 4px 0 0;
     font-family: Arial;
     font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.text {
+.noticia-title:hover {
+     color:#aa0404;
+    grid-column: 2;
+        grid-column-start: 2;
+        grid-column-end: auto;
+    margin: 4px 0 0;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.noticia-text {
+    grid-column: 2;
+        grid-column-start: 2;
+        grid-column-end: auto;
+    margin: 4px 0 0;
     font-family: Arial;
     text-align: justify;
 }
